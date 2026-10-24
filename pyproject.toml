@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "identitychain"
+version = "1.0.0"
+description = "Privacy-preserving identity proofs: Pedersen commitments, Schnorr proofs, Merkle selective disclosure"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Konain Sultan Khan", email = "kkdev9715@gmail.com" }]
+keywords = ["zero-knowledge", "pedersen", "schnorr", "merkle", "selective-disclosure"]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+
+[project.urls]
+Homepage = "https://github.com/kkcyber2/identitychain"
+Repository = "https://github.com/kkcyber2/identitychain"
+
+[tool.setuptools.packages.find]
+include = ["identitychain*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
